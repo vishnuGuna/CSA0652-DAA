@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+	int a,digit,sum=0,r;
+	printf("swaroop\n");
+	printf("192211969\n");
+	printf("enter the number :");
+	scanf("%d",&a);
+	r=a;
+	while(a!=0)
+	{
+		digit=a%10;
+		sum+=digit*digit*digit;
+		a=a/10;
+	}
+	if(sum==r)
+	{
+		printf("it is armstrong");
+	}
+	else
+	{
+		printf("not armstrong");
+	}
+	return 0;
+}
