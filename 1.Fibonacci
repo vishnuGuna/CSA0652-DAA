@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+	int first=0,second=1,name,id,number,i,next;
+	printf("swaroop\n");
+	printf("192211969\n");
+	printf("Enter the number :\n");
+	scanf("%d",&number);
+	for(i=0;i<number;i++)
+	{
+		printf("%d ",first);
+		next = first + second;
+        first = second;
+        second = next;
+	}
+}
